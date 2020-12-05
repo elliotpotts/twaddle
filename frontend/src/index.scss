@@ -1,0 +1,76 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Libre Baskerville", serif;
+    font-size: 3em;
+}
+#twaddle {
+    min-width: min-content;
+    max-width: 40ch;
+    height: 30ex;
+    max-height: 100%;
+    margin: auto auto;
+    padding: 2rem;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 0 .1rem .1rem rgba(0,0,0,.25);
+}
+.timer {
+    height: .5rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+.timer-bar {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border-radius: 2rem;
+}
+.spelling {
+    font-size: 1.6em;
+    letter-spacing: .1em;
+}
+input {
+    font-size: inherit;
+    font-family: inherit;
+}
+.pronunciation {
+    padding: .6rem 0;
+    border-bottom: 2px solid black;
+}
+.pos {
+    font-style: italic;
+    margin-left: 2rem;
+    font-size: 0.8em;
+}
+.defn {
+    box-sizing: border-box;
+    font-size: 1em;
+    margin: .6rem 0;
+    width: 100%;
+    border: none;
+    font-family: serif;
+    resize: none;
+}
+.charlimit {
+    text-align: right;
+    color: gray;
+    font-size: 0.4rem;
+}
+.defns li {
+    margin: .4rem;
+    padding: .2rem;
+    &.clickable:hover {
+        cursor: pointer;
+        color: blue;
+    }
+    &.selected {
+        color: lightseagreen;
+        &:hover {
+            color: lightseagreen;
+        }
+    }
+    &.disabled {
+        color: gray;
+    }
+}
