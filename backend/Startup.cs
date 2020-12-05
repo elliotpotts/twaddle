@@ -32,7 +32,7 @@ namespace Twaddle
             app.UseWebSockets();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapHub<GameHub>("/gamehub");
+                endpoints.MapHub<GameHub>("/api/gamehub");
                 endpoints.MapGet("/", context => context.Response.WriteAsync("Hello World!"));
             });
         }
